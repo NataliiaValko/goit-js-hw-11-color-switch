@@ -18,7 +18,7 @@ const randomIntegerFromInterval = (min, max) => {
 };
 const onStartSwitchInterval = () => {
     intervalId = setInterval(() => {
-        refs.body.style.backgroundColor = colors[randomIntegerFromInterval(1, colors.length)];
+        refs.body.style.backgroundColor = colors[randomIntegerFromInterval(0, colors.length - 1)];
         refs.startBtn.disabled = true
     },
         SWITCH_INTERVAL);
